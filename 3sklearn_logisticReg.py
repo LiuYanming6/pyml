@@ -35,3 +35,4 @@ svm.fit(X_combined, y_combined)
 plot_decision_regions(X_combined, y_combined, classifier=svm)
 plt.legend(loc='upper left')
 plt.show()
+

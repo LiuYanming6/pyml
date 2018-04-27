@@ -38,7 +38,8 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=.02):
 
     # 使用小圆圈高亮显示来自测试数据集的样本
     if test_idx:
+        print('test_idx')
         X_test, y_test = X[test_idx, :], y[test_idx]
-        plt.scatter(X_test[:, 0], X_test[:, 1],
+        plt.scatter(X_test[:, 0], X_test[:, 1], #c='',
                     alpha=1.0, linewidths=1, marker='o',
                     s=55, label='test set')
